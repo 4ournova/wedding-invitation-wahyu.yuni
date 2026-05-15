@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>Wedding Invitation</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+  rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ORNAMEN -->
+
+<div class="ornament ornament1"></div>
+<div class="ornament ornament2"></div>
+
+<div class="sparkle sparkle1"></div>
+<div class="sparkle sparkle2"></div>
+<div class="sparkle sparkle3"></div>
+
+<!-- ================= COVER ================= -->
+
+<div class="cover" id="cover">
+
+  <div class="overlay"></div>
+
+  <div class="cover-content">
+
+    <p class="sub-title">
+      THE WEDDING OF
+    </p>
+
+    <h1>
+      Wahyu Purnama
+      <br>
+      &
+      <br>
+      Shorea Suhyuni Ali, S.Si
+    </h1>
+
+    <p class="date">
+      10 - 11 Juni 2026
+    </p>
+
+    <div class="guest-box">
+
+      <p>Kepada Yth.</p>
+
+      <h3 id="guestName">
+        Tamu Undangan
+      </h3>
+
+    </div>
+
+    <button class="open-btn"
+    onclick="openInvitation()">
+
+      Buka Undangan
+
+    </button>
+
+  </div>
+
+</div>
+
+<!-- ================= MUSIC ================= -->
+
+<audio id="music" loop>
+
+  <source src="assets/Rossa feat. Afgan - Kamu Yang Kutunggu _ Official Music Video.mp3"
+  type="audio/mp3">
+
+</audio>
+
+<button id="musicBtn"
+class="music-btn">
+
+🎵
+
+</button>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div id="mainContent"
+class="main-content">
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+
+    <p class="sub-title">
+      THE WEDDING OF
+    </p>
+
+    <h1>
+      Wahyu Purnama
+      <br>
+      &
+      <br>
+      Shorea Suhyuni Ali, S.Si
+    </h1>
+
+    <p class="date">
+      10 - 11 Juni 2026
+    </p>
+
+  </div>
+
+</section>
+
+<!-- QUOTE -->
+
+<section>
+
+  <div class="container"
+  data-aos="fade-up">
+
+    <h2 class="section-title">
+
+      Assalamu’alaikum
+
+    </h2>
+
+    <div class="quote-box">
+
+      <p class="arabic">
+
+        وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ
+        اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا
+        اِلَيْهَا وَجَعَلَ بَيْنَكُمْ
+        مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ
+        ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ
+        يَّتَفَكَّرُوْنَ
+
+      </p>
+
+      <p class="quote">
+
+        “Dan di antara tanda-tanda
+        kekuasaan-Nya ialah Dia
+        menciptakan untukmu pasangan
+        hidup dari jenismu sendiri
+        supaya kamu merasa tenteram
+        dan dijadikan-Nya di antaramu
+        rasa kasih dan sayang.”
+
+      </p>
+
+      <span class="quote-source">
+
+        QS. Ar-Ruum : 21
+
+      </span>
+
+    </div>
+
+    <div class="divider">
+      ✦ ✦ ✦
+    </div>
+
+  </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="section-title"
+    data-aos="fade-up">
+
+      Menuju Hari Bahagia
+
+    </h2>
+
+    <div class="countdown">
+
+      <div class="time-box">
+        <h3 id="days">0</h3>
+        <span>Hari</span>
+      </div>
+
+      <div class="time-box">
+        <h3 id="hours">0</h3>
+        <span>Jam</span>
+      </div>
+
+      <div class="time-box">
+        <h3 id="minutes">0</h3>
+        <span>Menit</span>
+      </div>
+
+      <div class="time-box">
+        <h3 id="seconds">0</h3>
+        <span>Detik</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Gallery
+
+    </h2>
+
+    <div class="gallery">
+
+      <img src="assets/foto1.jpeg">
+      <img src="assets/foto2.jpeg">
+      <img src="assets/foto3.jpeg">
+      <img src="assets/foto4.jpeg">
+      <img src="assets/foto5.jpeg">
+      <img src="assets/foto6.jpeg">
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EVENT -->
+
+<section>
+
+  <div class="container"
+  data-aos="fade-up">
+
+    <h2 class="section-title">
+
+      Wedding Event
+
+    </h2>
+
+    <div class="event-wrapper">
+
+      <!-- AKAD -->
+
+      <div class="event-card">
+
+        <div class="event-icon">
+
+          💍
+
+        </div>
+
+        <h3>Akad Nikah</h3>
+
+        <div class="event-info">
+
+          <p>
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            Rabu,
+            10 Juni 2026
+
+          </p>
+
+          <p>
+
+            <i class="fa-solid fa-clock"></i>
+
+            10.00 WIB
+            s.d Selesai
+
+          </p>
+
+          <p>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Balanti Nagari Sikabu
+            Lubuk Alung
+            Kab. Padang Pariaman
+
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- ORNAMEN -->
+
+      <div class="event-divider">
+
+        ✦
+
+      </div>
+
+      <!-- RESEPSI -->
+
+      <div class="event-card">
+
+        <div class="event-icon">
+
+          🥂
+
+        </div>
+
+        <h3>Resepsi</h3>
+
+        <div class="event-info">
+
+          <p>
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            Kamis,
+            11 Juni 2026
+
+          </p>
+
+          <p>
+
+            <i class="fa-solid fa-clock"></i>
+
+            10.00 WIB
+            s.d Selesai
+
+          </p>
+
+          <p>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            Balanti Nagari Sikabu
+            Lubuk Alung
+            Kab. Padang Pariaman
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="divider">
+      ✦ ✦ ✦
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MAP -->
+
+<section>
+
+  <div class="container"
+  data-aos="fade-up">
+
+    <h2 class="section-title">
+
+      Lokasi Acara
+
+    </h2>
+
+    <div class="location-card">
+
+      <!-- FOTO LOKASI -->
+
+      <div class="location-icon">
+
+         <img
+        src="assets/logo padangpariaman.jpg"
+        class="location-photo">
+
+      </div>
+
+      <!-- TITLE -->
+
+      <h3 class="location-title">
+
+        Balanti Nagari Sikabu
+
+      </h3>
+
+      <!-- ADDRESS -->
+
+      <p class="location-text">
+
+        Lubuk Alung,
+        Kabupaten Padang Pariaman
+
+      </p>
+
+      <!-- BUTTON -->
+
+      <a href="https://maps.app.goo.gl/zy2BHenxiJA5BPVDA"
+      target="_blank"
+      class="map-btn">
+
+        Buka Google Maps
+
+      </a>
+
+    </div>
+
+    <div class="divider">
+      ✦ ✦ ✦
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WEDDING GIFT -->
+
+<section>
+
+  <div class="container"
+  data-aos="fade-up">
+
+    <h2 class="section-title">
+
+      Wedding Gift
+
+    </h2>
+
+    <div class="gift-wrapper">
+
+      <!-- BANK -->
+
+      <div class="gift-card">
+
+        <div class="gift-top">
+
+          <i class="fa-solid fa-building-columns"></i>
+
+          <h3>Bank BNI</h3>
+
+        </div>
+
+        <div class="gift-number">
+
+          0722413054
+
+        </div>
+
+        <p class="gift-name">
+
+          a.n Shorea Suhyuni Ali
+
+        </p>
+
+        <button
+        class="copy-btn"
+        onclick="copyRekening()">
+
+          <i class="fa-solid fa-copy"></i>
+
+          Salin Rekening
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="divider">
+      ✦ ✦ ✦
+    </div>
+
+  </div>
+
+</section>
+
+<!-- UCAPAN -->
+
+<section>
+
+  <div class="container">
+
+    <h2 class="section-title">
+
+      Ucapan & Doa
+
+    </h2>
+
+    <div class="wish-box">
+
+      <input
+      type="text"
+      placeholder="Nama Anda"
+      id="nama">
+
+      <textarea
+      placeholder="Tulis ucapan dan doa..."
+      id="ucapan"></textarea>
+
+      <button
+      onclick="kirimUcapan()">
+
+        Kirim Ucapan
+
+      </button>
+
+    </div>
+
+    <div id="listUcapan"></div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h2>Terima Kasih</h2>
+
+  <p>
+
+    Merupakan suatu kehormatan
+    bagi kami apabila
+    Bapak/Ibu/Saudara/i
+    dapat hadir untuk memberikan
+    do'a restu kepada kedua mempelai
+    Wassalamualaikum Wr. Wb.
+
+  </p>
+
+</footer>
+
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration:1200
+});
+</script>
+
+</body>
+</html>
